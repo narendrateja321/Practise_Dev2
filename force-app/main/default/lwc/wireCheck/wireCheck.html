@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="ApexWireMethodToProperty" icon-name="custom:custom63">
+        <div class="slds-m-around_medium">
+            <template if:true={accountRecords}>
+                <template for:each={accountRecords} for:item="contact">
+                    <p key={contact.Id}>{contact.Name}</p>
+                </template>
+            </template>
+
+        </div>
+    </lightning-card>
+    <div class="slds-p-left_large">
+        testName <span> Span Value</span>
+    </div>
+</template>

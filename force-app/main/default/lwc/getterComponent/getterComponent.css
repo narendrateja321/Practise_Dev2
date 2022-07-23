@@ -1,0 +1,15 @@
+.container{
+    border: 1px blanchedalmond solid;
+    height: 100px;
+    width: 100px;
+    padding-right: 10px;
+}
+.green{
+    background: darkgreen;
+}
+.red{
+   background: red;
+}
+.yellow{
+    background:yellow;
+}

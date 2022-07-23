@@ -1,0 +1,26 @@
+<template>
+    <!-- <lightning-card variant="Narrow" title="Accounts Filter" icon-name="standard:account"> -->
+    <div class="slds-box">
+        <c-lwc-search-comp onsearchcompevent={onSearchCompEvent}></c-lwc-search-comp>
+    </div>
+    <div class="slds-grid slds-gutters">
+        <div class="slds-col">
+            <span>
+                <template if:true={showAccountsBlock}>
+                    <c-lwc-accounts-display onsendaccount={onAccountClick} account-records={accountRecords}>
+                    </c-lwc-accounts-display>
+                </template>
+            </span>
+        </div>
+        <div class="slds-col">
+            <span>
+                <template if:true={showContactsBlock}>
+                    <c-lwc-contacts-display contactrecords={contactsToDisplay}></c-lwc-contacts-display>
+                </template>
+
+            </span>
+        </div>
+    </div>
+    <!-- </lightning-card> -->
+
+</template>

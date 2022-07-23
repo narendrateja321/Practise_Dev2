@@ -1,0 +1,19 @@
+<template>
+    <div>
+        <lightning-card title="One Directional Data Binding" variant="Narrow" icon-name="standard:account">
+            <div class="slds-m-around_medium">
+                <h1>My Full Name Is: {fullName}</h1>
+            </div>
+        </lightning-card>
+    </div>
+    <div>
+        <lightning-card variant="Narrow" icon-name="standard:account" title="Two Directional Data binding">
+            <div class="slds-m-around_large">
+                <lightning-input label="Enter Your Full Name" value={fullName} onkeyup={onkeyupd}></lightning-input>
+            </div>
+            <div class="slds-m-around_large">
+                <h2>My Full Name Is: {fullName}</h2>
+            </div>
+        </lightning-card>
+    </div>
+</template>

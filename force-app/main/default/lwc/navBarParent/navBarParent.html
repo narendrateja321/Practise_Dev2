@@ -1,0 +1,37 @@
+<template>
+    <lightning-card variant="Narrow" title="ChildToParentCommunication" icon-name="standard:account">
+        <div class="demo-only demo-only--sizing slds-grid slds-wrap">
+            <div class="slds-size_1-of-4">
+
+
+                <c-nav-bar-child nav-list={navList} onselection={selecthandler}></c-nav-bar-child>
+            </div>
+            <div class="slds-size_3-of-4">
+                <div>
+                    <template if:true={selectedItem}>
+                        <img src={selectedItem.imgUrl} alt="Cricketer Image" height="100px" width="100px" />
+                        <div>
+                            Id : <span>{selectedItem.id}</span>
+                        </div>
+
+                        <div>
+                            Name : <span>{selectedItem.name}</span>
+                        </div>
+
+                        <div>
+                            Country : <span>{selectedItem.country}</span>
+                        </div>
+
+                        <div>
+                            Rating : <span>{selectedItem.rating}</span>
+                        </div>
+
+                        <div>
+                            Position : <span>{selectedItem.position}</span>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </div>
+    </lightning-card>
+</template>

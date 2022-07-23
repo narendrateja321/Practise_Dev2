@@ -1,0 +1,15 @@
+<template>
+    <lightning-card variant="Narrow" title="Hello" icon-name="standard:account">
+        <div>
+            <div class="slds-p-around_large slds-page-header">
+                Click the button to change the background color of child by calling the child method from parent
+            </div><br />
+            <div class="slds-button">
+                <button name="btn" onclick={changeColor}>Click Here</button>
+            </div>
+        </div>
+        <div class="slds-card__body">
+            <c-bar-child-component></c-bar-child-component>
+        </div>
+    </lightning-card>
+</template>

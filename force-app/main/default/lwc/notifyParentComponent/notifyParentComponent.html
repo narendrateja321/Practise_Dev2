@@ -1,0 +1,13 @@
+<template>
+    <lightning-card variant="Narrow" title="ChildToParentCommunication with Event Bubbling"
+        icon-name="standard:account">
+        <div onclick={parentClickHandle} style="background-color: chocolate; font-size: large;">
+            <div if:true={showParentNotification}>
+                <h2>This is parent notification bubbled from child button click</h2>
+            </div>
+            <div>
+                <c-notify-child-component></c-notify-child-component>
+            </div>
+        </div>
+    </lightning-card>
+</template>

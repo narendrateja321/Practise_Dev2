@@ -1,0 +1,47 @@
+<template>
+    <lightning-card title="wireListInfoByName">
+        <template if:true={displayColumns}>
+            <div style="height: 300px;">
+                <lightning-datatable key-field="id" data={displayColumns} columns={columns}
+                    onrowselection={changeHandler}>
+                </lightning-datatable>
+            </div>
+            <br />
+            <div class="slds-p-around_medium">
+                <lightning-button variant="success" label="click here" title="showData" onclick={handleClick}>
+                </lightning-button>
+            </div>
+            <div class="slds-p-around_medium">
+                <template if:true={showDiv} for:each={selectedColumns} for:item="sel">
+                    <li key={sel.fieldApiName}>
+                        <p> {con.fieldApiName} <span>{con.label}</span></p>
+                    </li>
+                </template>
+            </div>
+            <!-- <div class="slds-m-around_medium">
+                <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                    <thead>
+                        <tr class="slds-line-height_reset">
+                            <th scope="col"> FieldApiName </th>
+                            <th scope="col"> Label </th>
+                            <th scope="col"> Soratable </th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={displayColumns} for:item="col">
+
+                            <tr class="slds-hint-parent" key={col.fieldApiName}>
+                                <th scope="row"> {col.fieldApiName} </th>
+                                <th scope="row"> {col.label} </th>
+                                <th scope="row"> {col.sortable} </th>
+
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+
+            </div> -->
+        </template>
+    </lightning-card>
+</template>

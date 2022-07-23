@@ -1,0 +1,30 @@
+.success{
+    background-color: aliceblue;
+    padding: 10px;
+    margin: 10px;
+    border: 3px;
+    font-style: italic;
+    font-size: medium;
+    color: green;
+   
+}
+.failure{
+    background-color: rgb(230, 109, 115);
+    padding: 10px;
+    margin: 10px;
+    border: 3px;
+    font-style: italic;
+    font-size: medium;
+    color: brown;
+  
+}
+.partial{
+    background-color: rgb(32, 205, 228);
+    padding: 10px;
+    margin: 10px;
+    border: 3px;
+    font-style: italic;
+    font-size: medium;
+    color: rgb(119, 162, 226);
+
+}

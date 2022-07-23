@@ -1,0 +1,5 @@
+.select_parent{
+    background-color: var(--parentbackground, rgb(49, 20, 216));
+    border: lightcoral 10px;
+    font-size: large;
+}

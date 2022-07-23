@@ -1,0 +1,9 @@
+.select_box{
+    background-color: blueviolet;
+    border: lightcoral 10px;
+    font-size: large;
+}
+.button_box{
+    opacity: inherit;
+    background-color: chocolate;
+}

@@ -1,0 +1,33 @@
+<template>
+    <div>
+        <lightning-card variant="Narrow" title="Account Records" icon-name="standard:account">
+            <div if:true={accountRecords}>
+                <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                    <thead class="custHeader">
+                        <tr class="slds-line-height_reset">
+
+                            <th scope="col"> Account Name </th>
+                            <th scope="col"> Rating </th>
+                            <th scope="col"> Industry </th>
+
+                        </tr>
+                    </thead>
+                    <tbody class="custRow">
+                        <template for:each={accountRecords} for:item="account">
+                            <tr class="slds-hint-parent" key={account.Id}>
+                                <th scope="row">
+                                    <a onclick={viewContacts} title={account.Id}>
+                                        {account.Name}
+                                    </a>
+                                </th>
+                                <th scope="row"> {account.Rating} </th>
+                                <th scope="row"> {account.Industry} </th>
+                            </tr>
+                        </template>
+
+                    </tbody>
+                </table>
+            </div>
+        </lightning-card>
+    </div>
+</template>

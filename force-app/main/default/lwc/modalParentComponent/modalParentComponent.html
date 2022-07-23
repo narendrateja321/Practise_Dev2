@@ -1,0 +1,16 @@
+<template>
+    <lightning-card variant="Narrow" title="Hello" icon-name="standard:account">
+        <div class="slds-button">
+            <button onclick={openModal}>Open Modal</button>
+        </div>
+
+        <template if:true={showModal}>
+            <c-modal-child-component
+                show-body="Modal Open triggered from parent and onclick of close button will dispatch the event in child and parent listens the event and closes the modal."
+                show-header="Header From Parent" onclose={closeDispatchEvt}>
+
+            </c-modal-child-component>
+        </template>
+
+    </lightning-card>
+</template>

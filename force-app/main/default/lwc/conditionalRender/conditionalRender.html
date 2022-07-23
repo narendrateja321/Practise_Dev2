@@ -1,0 +1,13 @@
+<template>
+    <lightning-card variant="Narrow" title="Hello" icon-name="standard:account">
+        <div class="slds-p-around_medium">
+            <button class="btn" onclick={btnClick}>Click Here To See Hidden Text Below</button>
+        </div>
+        <div class="slds-m-around_medium">
+            <template if:true={textDisplay}>
+                <p>This is the hidden text and you somehow able to see this.</p>
+            </template>
+        </div>
+    </lightning-card>
+
+</template>

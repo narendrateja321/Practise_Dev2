@@ -1,0 +1,9 @@
+<template>
+
+    <template if:true={navList} for:each={navList} for:item="nav">
+        <li key={nav.id} value={nav.name} class="slds-text-heading_medium">
+            <a onclick={clickHandler}>{nav.name}</a>
+        </li>
+    </template>
+
+</template>

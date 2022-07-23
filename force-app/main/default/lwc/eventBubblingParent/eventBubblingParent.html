@@ -1,0 +1,15 @@
+<template>
+    <lightning-card variant="Narrow" title="Event Propagation" icon-name="standard:account">
+        <div class="slds-p-around_large select_parent">
+            This is Parent Component
+        </div>
+        <template if:true={showParentText}>
+            <div class="slds-p-around_large select_parent">
+                {parentText}
+            </div>
+        </template>
+        <div>
+            <c-event-bubbling-child onmycustomevent={customEvtHandler}></c-event-bubbling-child>
+        </div>
+    </lightning-card>
+</template>

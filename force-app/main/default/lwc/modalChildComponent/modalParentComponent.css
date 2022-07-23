@@ -1,0 +1,13 @@
+.headerClass{
+   font-weight: 100;
+   color: blueviolet;
+   
+}
+.bodyClass{
+    font-weight: 100;
+    color: rgb(102, 104, 24);
+}
+.footerClass{
+    font-weight: 100;
+   color: rgb(31, 90, 114);
+}

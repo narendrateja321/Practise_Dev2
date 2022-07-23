@@ -1,0 +1,17 @@
+<template>
+    <div class="slds-card slds-grid slds-gutters">
+        <template for:each={userDetails} for:item="user">
+            <div key={user.name}>
+
+                <div class="slds-col slds-size_3-of-12">
+                    <img src={user.imageUrl} alt={user.name} style="width:100%">
+                    <h1>{user.name}</h1>
+                    <p>{user.title}</p>
+                    <p>{user.company}</p>
+                    <p><button style="width: 100%">{user.buttontext}</button></p>
+                </div>
+
+            </div>
+        </template>
+    </div>
+</template>

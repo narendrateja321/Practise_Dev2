@@ -1,0 +1,12 @@
+<template>
+    <lightning-card style="background-color: antiquewhite;">
+        <div onclick={clickHandler} style="background-color: burlywood; font-size: medium;">
+            <div if:true={showChildNotification}>
+                <h2> Child's Notification Triggered on event bubbling</h2>
+            </div>
+            <div onclick={bubbleClick}>
+                <button>Bubbling Here</button>
+            </div>
+        </div>
+    </lightning-card>
+</template>

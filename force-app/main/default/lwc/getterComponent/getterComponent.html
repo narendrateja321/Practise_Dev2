@@ -1,0 +1,19 @@
+<template>
+    <div class="slds-p-around_medium">
+        <lightning-card variant="Narrow" title="Getter Component" icon-name="standard:account">
+            <div class="slds-text-heading_large slds-text-align_center slds-text-font_monospace ">
+                {getTitle}
+            </div>
+
+            <div class="slds-p-around_medium">
+                <div class="slds-p-around_medium">
+                    <button class="container" onclick={changeHandler}>ON</button>
+                    <button class="container" onclick={changeHandler}>OFF</button>
+                </div>
+            </div>
+            <div class="slds-p-around_medium">
+                <div class={colorPick}></div>
+            </div>
+        </lightning-card>
+    </div>
+</template>

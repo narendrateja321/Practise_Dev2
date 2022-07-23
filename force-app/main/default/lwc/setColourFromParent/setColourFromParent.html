@@ -1,0 +1,14 @@
+<template>
+    <lightning-card variant="Narrow" title="Hello" icon-name="standard:account">
+        <div class="slds-p-around_medium">
+            <div>
+                <div> pick the colour :
+                    <span>
+                        <input type="color" name="pickColour" id="clr" value={pickColour} onkeyup={changeHandler}>
+                    </span>
+                </div>
+            </div>
+        </div><br />
+        <c-set-colour-to-child pick-colour={pickColour}></c-set-colour-to-child>
+    </lightning-card>
+</template>

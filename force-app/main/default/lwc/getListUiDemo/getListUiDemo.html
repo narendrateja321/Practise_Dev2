@@ -1,0 +1,12 @@
+<template>
+    <lightning-card variant="Narrow" title="Wired List View" icon-name="standard:account">
+        <div class="slds-p-around_medium">
+            <template if:true={AccountList} for:each={AccountList} for:item="acc" for:index="index">
+                <div key={acc.id} class="slds-p-around_large">
+                    {acc.fields.Name.value}
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+
+</template>

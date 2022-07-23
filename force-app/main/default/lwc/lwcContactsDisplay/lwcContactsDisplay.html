@@ -1,0 +1,28 @@
+<template>
+    <div>
+        <lightning-card variant="Narrow" title="Contact Records" icon-name="standard:contact">
+            <div if:true={contactrecords}>
+                <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                    <thead class="custHeader">
+                        <tr class="slds-line-height_reset">
+
+                            <th scope="col"> FirstName</th>
+                            <th scope="col"> LastName </th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={contactrecords} for:item="contact">
+                            <tr class="slds-hint-parent" key={contact.Id}>
+
+                                <th scope="row"> {contact.FirstName} </th>
+                                <th scope="row"> {contact.LastName} </th>
+                            </tr>
+                        </template>
+
+                    </tbody>
+                </table>
+            </div>
+        </lightning-card>
+    </div>
+</template>

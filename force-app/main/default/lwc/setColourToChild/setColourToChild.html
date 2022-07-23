@@ -1,0 +1,17 @@
+<template>
+    <lightning-card variant="Narrow" title="Hello" icon-name="standard:account">
+        <div class="slds-grid slds-gutters">
+            <template iterator:users={userDetails}>
+                <div key={users.value.name} class="card">
+                    <div class="slds-col">
+                        <span>
+                            <div class="slds-p-around_medium" style={getStyle}>
+                                {users.value.name}
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

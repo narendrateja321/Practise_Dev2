@@ -1,0 +1,10 @@
+<template>
+    <div>
+        <lightning-card title="Template Looping" icon-name="utility:agent_home" variant="Narrow">
+            <template iterator:it={columns}>
+                <div key={it.value} class="slds-p-around_large slds-box">{it.value}</div>
+            </template>
+        </lightning-card>
+    </div>
+
+</template>

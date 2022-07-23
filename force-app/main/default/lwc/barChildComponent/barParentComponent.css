@@ -1,0 +1,17 @@
+.blue{
+    background-color: blue;
+}
+.red{
+    background-color: red;
+}
+
+
+.slds-text-align_center,
+.slds-text-align--center {
+
+text-align: right;
+
+width: fit-content;
+background-color: blueviolet;
+
+}

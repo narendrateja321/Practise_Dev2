@@ -1,0 +1,16 @@
+<template>
+    <div class="slds-p-around_medium">
+        <lightning-card variant="Narrow" title="Hello" icon-name="standard:account">
+            <lightning-input type="text" variant="standard" value={inputText} onkeyup={keyHandler}
+                placeholder="type here...">
+            </lightning-input>
+            <div class="slds-p-around_medium">
+                <template if:true={checkVal}>
+                    Hi salesforce Gems! welcome to the new project.
+                </template>
+
+            </div>
+
+        </lightning-card>
+    </div>
+</template>
