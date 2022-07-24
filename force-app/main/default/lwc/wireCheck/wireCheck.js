@@ -10,7 +10,7 @@ export default class WireCheck extends LightningElement {
         console.log('wire');
         if (data) {
             console.log('wire ');
-            console.log('edited in remotely');
+            console.log('updated');
             this.accountRecords = data;
             this.error = undefined;
         } else if (error) {
