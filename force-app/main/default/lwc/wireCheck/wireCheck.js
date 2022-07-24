@@ -11,6 +11,7 @@ export default class WireCheck extends LightningElement {
         if (data) {
             console.log('wire ');
             console.log('success block entered1');
+
             this.accountRecords = data;
             this.error = undefined;
         } else if (error) {
