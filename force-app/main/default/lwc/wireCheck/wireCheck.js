@@ -9,7 +9,7 @@ export default class WireCheck extends LightningElement {
     @wire(getContactList) contacts({ error, data }) {
         console.log('wire');
         if (data) {
-            console.log('wire ');
+            console.log('Successfully avoided merge ');
             console.log('updated');
             this.accountRecords = data;
             this.error = undefined;
