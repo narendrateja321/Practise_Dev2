@@ -4,7 +4,7 @@ public with sharing class lwcApplication1_Controller {
     public static List<Account> getAccounts(String inputText){
         try {
             String key = '%' + inputText + '%';
-            System.debug('git check');
+            System.debug('git check in git');
             return [select id, Name, industry, Rating from Account Where Name like:key ];
            // return new List<Account>();
         } catch (Exception e) {
